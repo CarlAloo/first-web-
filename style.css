@@ -1,0 +1,160 @@
+body
+{     
+    margin:0;
+    padding:0;
+}
+h1
+{
+    font-weight: bold;
+    text-align: left;
+    font-size:50px;
+}
+
+ul
+{   padding:0;
+    margin:0;
+    list-style-type:none;
+    background-color:#663366;
+    text-align:center;
+ }
+li{ 
+    display:inline-block;
+    padding:20px;
+    margin:15px;
+    }
+/*for the logo */
+      .logo {
+        position:relative;
+        float: left;
+      }
+      
+      .logo img {
+        height: 80px;
+        margin: 20px;
+        border-radius: 10px;
+        
+      }
+
+      /* Set the style of the navigation bar */
+      .navbar {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        z-index: 1;
+        opacity:0.8;
+      }
+
+      /* Set the style of the navigation links */
+      .navbar a {
+        color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-shadow: 2px 2px #000000;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      /* Set the style of the active navigation link */
+      .navbar a.active {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+a:hover
+{
+   background:#000;
+   transition:0.6s;
+}
+a:visited
+{
+   color:green;
+}
+/* Set the height and position of the container */
+      .slideshow-container {
+        position: relative;
+        height: 100vh;
+      }
+
+      /* Set the style of the images */
+      .mySlides {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+
+      /* Set the style of the active image */
+      .mySlides.active {
+        opacity: 1;
+      }
+
+      /* Set the style of the caption */
+      .caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 2em;
+        font-weight: bold;
+        text-shadow: 2px 2px #000000;
+      }
+/* Set the style of the icon */
+      .icon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: white;
+        font-size: 2em;
+        cursor: pointer;
+        z-index: 1;
+/* Style for the pop up */
+    .popup {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    }
+
+    /* Style for the pop up content */
+    .popup-content {
+      background-color: white;
+      margin: 10% auto; /* 10% from the top and centered */
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+    }
+
+    /* Style for the close button */
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+footer {
+  background-color: black;
+  color: white; /* Optional: set text color to white */
+  padding:5px; /* Optional: add padding to footer content */
+}

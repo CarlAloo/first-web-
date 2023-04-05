@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+/* Set the style for the container */
+      .container {
+        display: flex;
+        flex-direction: row;
+      }
+       .container{
+        display: flex;
+        flex-direction: row;
+      }
+      /* Set the style for the paragraph */
+      p{
+        flex: 1;
+      }
+      /* Set the style for the image */
+      img {
+        flex: 1;
+        height: 500px;
+        margin: 80px;
+      }
+/*for the logo */
+      .logo {
+        position:relative;
+        float: left;
+      }
+      
+      .logo img {
+        height: 80px;
+        margin: 20px;
+        border-radius: 10px;
+      }
+
+      /* Set the style of the navigation bar */
+      .navbar {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        z-index: 1;
+        opacity:0.8;
+      }
+
+      /* Set the style of the navigation links */
+      .navbar a {
+        color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-shadow: 2px 2px #000000;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      /* Set the style of the active navigation link */
+      .navbar a.active {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+a:hover
+{
+   background:#000;
+   transition:0.6s;
+}
+a:visited
+{
+   color:green;
+}
+/* Set the height and position of the container */
+      .slideshow-container {
+        position: relative;
+        height: 100vh;
+      }
+ul
+{   padding:0;
+    margin:0;
+    list-style-type:none;
+    background-color:#663366;
+    text-align:center;
+ }
+li{ 
+    display:inline-block;
+    padding:20px;
+    margin:15px;
+    }
+h1
+{
+    font-weight: bold;
+    font-size:24px;
+    text-align: left;
+}
+footer {
+  background-color: black;
+  color: white; /* Optional: set text color to white */
+  padding:5px; /* Optional: add padding to footer content */
+}
+body
+{
+ background-image:url("viktor-forgacs-aPC8ygu3bWA-unsplash.jpg");
+ background-position:absolute;
+ opacity:90;
+}
+ /* Apply rounded corners to the logo */
+    .logo-rounded {
+      border-radius: 10px;
+    }
+    
+    /* Apply circular shape to the logo */
+    .logo-circle {
+      border-radius: 50%;
+    }
+/* Style for the pop up */
+    .popup {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    }
+
+    /* Style for the pop up content */
+    .popup-content {
+      background-color: white;
+      margin: 10% auto; /* 10% from the top and centered */
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+    }
+
+    /* Style for the close button */
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>  
+  </head>
+    <title>Home</title>
+<body>
+ <div class="navbar">
+                     <ul>
+                        <li class="logo"><a href="#"><img src="jason-leung-nM2WEy42Npg-unsplash.jpg" alt="jason-leung-nM2WEy42Npg-unsplash"></a></li>
+			<li><a href="index.html"class="active">HOME</a></li>
+			<li><a href="About.html">ABOUT</a></li>
+			<li><a href="Team.html">TEAM</a></li>
+                        <li><a href="Contact.html"> CONTACT US</a></li>
+                        <div class="icon">&#9776;</div>
+	             </ul>
+        </div>
+    <h1>ABOUT CLUB</h1>
+<div class="container ">
+      <p>Kanga basketball club is an organization that provides opportunities for basketball players to develop their skills, compete, and connect with others who share their passion for the sport. It typically organized into teams, which compete against other clubs in leagues, tournaments, and other events.
+
+One of the primary goals of Kanga basketball club is to help its players improve their skills. It  involves providing access to experienced coaches who can help players refine their techniques and strategies. It also offers training camps, clinics, and other programs designed to help players develop their physical fitness, mental toughness, and teamwork skills.
+
+Another important aspect of Kanga basketball club is the opportunity to compete. Through regular practices and games, players can put their skills to the test and work toward achieving common goals as a team. This can be an excellent way to build camaraderie and forge strong bonds between teammates.
+
+Beyond the skills and experience that players gain on the court,Kanga basketball clubs can also provide a sense of community and social connection. By bringing together players, coaches, and families who are passionate about basketball, clubs can create a supportive and inclusive environment where individuals can form lasting friendships and connections.
+
+Basketball clubs may also offer a range of other benefits and services to their members. These might include access to equipment and facilities, networking opportunities, and scholarships or other forms of financial assistance. Kanga basketball club also organize social events and community service projects to give back to the wider community and help promote the values of teamwork and sportsmanship.
+
+Overall, Kanga basketball club can be an incredibly rewarding experience for players of all ages and skill levels. By providing opportunities for development, competition, and community, these organizations play an important role in promoting the growth and vitality of basketball as a sport.
+</p>
+       <img src="august-phlieger-CREqtqgBFcU-unsplash.jpg" alt="august-phlieger-CREqtqgBFcU-unsplash">
+    </div> 
+<!-- Button to trigger the pop up -->
+  <button onclick="openPopup()">LEARN MORE.</button>
+
+  <!-- The pop up -->
+  <div id="myPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <p>Basketball, like other sports, offers many advantages to individuals and society. It promotes physical fitness, coordination, and teamwork skills. Playing basketball regularly can also help improve mental health, such as reducing stress and anxiety. Additionally, participating in sports such as basketball can provide opportunities for social interaction, cultural exchange, and personal growth. The benefits of basketball extend beyond the court, and the sport can be an important tool for building healthier individuals and communities.</p>
+    </div>
+  </div>
+
+  <!-- JavaScript to show and hide the pop up -->
+  <script>
+    function openPopup() {
+      document.getElementById("myPopup").style.display = "block";
+    }
+
+    function closePopup() {
+      document.getElementById("myPopup").style.display = "none";
+    }
+  </script>
+     
+     <footer>
+     <p style="text-align: right;"><i>compiled by @ Carl Kanga </i></p>
+     </footer>
+</body>
+</html>

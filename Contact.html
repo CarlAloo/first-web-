@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us - Basketball Team</title>
+    <style>
+      /* CSS styles for the page layout */
+      body {
+        font-family: Arial, sans-serif;
+        background-image:url("izuddin-helmi-adnan-UQpTP-KqYRk-unsplash.jpg");
+        margin: 0;
+        padding: 0;
+      }
+      
+      #header {
+        background-color: black;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      #contact-form {
+        background-color: #fff;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      
+      #contact-form input,
+      #contact-form textarea {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+      
+      #contact-form textarea {
+        height: 150px;
+      }
+      
+      #contact-form button {
+        display: block;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      #contact-form button:hover {
+        background-color: #555;
+      }
+      
+      /* CSS styles for responsive design */
+      @media (max-width: 600px) {
+        #contact-form {
+          margin: 20px 10px;
+          max-width: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Contact Us</h1>
+    </div>
+    <div id="contact-form">
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name..." required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email address..." required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+        
+        <button type="submit" onclick="submitForm()">Send Message</button>
+      </form>
+    </div>
+    <script>
+      /* JavaScript code to handle form submission */
+      function submitForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+        
+        // You can customize this code to send the form data to your server
+        console.log("Name: " + name);
+        console.log("Email: " + email);
+        console.log("Message: " + message);
+        
+        alert("Thank you for your message!");
+      }
+    </script>
+  </body>
+</html>

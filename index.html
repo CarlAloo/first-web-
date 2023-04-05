@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>
+       Kanga Basketbalclub
+      </title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link style="text/css"rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <div class="slideshow-container">
+      <img class="mySlides active" src="tj-dragotta-Gl0jBJJTDWs-unsplash.jpg" alt="tj-dragotta-Gl0jBJJTDWs-unsplash">
+      <img class="mySlides" src="markus-spiske-oXS1f0uZYV4-unsplash.jpg" alt="markus-spiske-oXS1f0uZYV4-unsplash">
+      <img class="mySlides" src="qi-xna-Ii7adwWwNh4-unsplash.jpg" alt="qi-xna-Ii7adwWwNh4-unsplash">
+      <img class="mySlides" src="logan-weaver-lgnwvr-zPHJ_7seOfA-unsplash.jpg" alt="logan-weaver-lgnwvr-zPHJ_7seOfA-unsplash">
+      <img class="mySlides" src="tj-dragotta-Gl0jBJJTDWs-unsplash.jpg" alt="tj-dragotta-Gl0jBJJTDWs-unsplash">
+       <div class="caption"><h1>KANGA BASKETBALL CLUB.<br>SPORTS EXCELLENCE.</h1></div>
+    <div class="navbar">
+                     <ul>
+                        <li class="logo"><a href="#"><img src="jason-leung-nM2WEy42Npg-unsplash.jpg" alt="jason-leung-nM2WEy42Npg-unsplash"></a></li>
+			<li><a href="index.html"class="active">HOME</a></li>
+			<li><a href="About.html">ABOUT</a></li>
+			<li><a href="Team.html">TEAM</a></li>
+                        <li><a href="Contact.html"> CONTACT US</a></li>
+                        <div class="icon">&#9776;</div>
+	             </ul>
+        </div> 
+        </div>
+  <!-- Button to trigger the pop up -->
+  <button onclick="openPopup()">LEARN MORE.</button>
+
+  <!-- The pop up -->
+  <div id="myPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <p>Basketball, like other sports, offers many advantages to individuals and society. It promotes physical fitness, coordination, and teamwork skills. Playing basketball regularly can also help improve mental health, such as reducing stress and anxiety. Additionally, participating in sports such as basketball can provide opportunities for social interaction, cultural exchange, and personal growth. The benefits of basketball extend beyond the court, and the sport can be an important tool for building healthier individuals and communities.</p>
+    </div>
+  </div>
+
+  <!-- JavaScript to show and hide the pop up -->
+  <script>
+    function openPopup() {
+      document.getElementById("myPopup").style.display = "block";
+    }
+
+    function closePopup() {
+      document.getElementById("myPopup").style.display = "none";
+    }
+  </script>
+          <script >
+               
+      // Set the slideshow interval
+      const interval = 5000; // 5 seconds
+      
+      // Get the slideshow container and slides
+      const slideshow = document.querySelector(".slideshow-container");
+      const slides = slideshow.querySelectorAll(".mySlides");
+      
+      // Set the initial slide index
+      let slideIndex = 0;
+      
+      // Set the active slide and caption
+      const setActiveSlide = () => {
+        // Hide all slides
+        slides.forEach((slide) => slide.classList.remove("active"));
+      
+        // Show the current slide
+        slides[slideIndex].classList.add("active");
+      };
+      
+      // Set the first slide
+      setActiveSlide();
+      
+      // Set the slideshow interval
+      setInterval(() => {
+        // Increment the slide index
+        slideIndex++;
+      
+        // Loop back to the first slide
+        if (slideIndex >= slides.length) {
+          slideIndex = 0;
+        }
+      
+        // Set the active slide and caption
+        setActiveSlide();
+        }, interval);
+          </script>       
+     <footer>
+     <p style="text-align: right;"><i>compiled by @ Carl Kanga </i></p>
+     </footer>
+</body>
+</html>
